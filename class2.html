@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        This is my Navbar
+    </nav>
+
+
+
+    <script>
+
+        // 1. create an anchor tag 
+        var a = document.createElement('a');
+        // Set attribute : href = http://google.com textContent = Google
+        a.setAttribute('href', '')
+
+
+        // 1. Create the element
+         var h1 = document.createElement('h1');
+
+        //  2. Set attributes an content
+         h1.textContent = "hello world";
+
+        //  3. Place inside
+            // a. retrieve an existing element out of the dom
+            var body = document.querySelector('body');
+            // b. attach new element to existing element with appen method
+            body.append(h1);
+    </script>
+    
+</body>
+</html>
